@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <title>Frozen Lake</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="ui">
+      <button id="mute" aria-label="Toggle sound (M)">🔊</button>
+
+      <div id="select-screen">
+        <header>
+          <h1>Frozen Lake</h1>
+          <p class="tagline">Cross the ice before it cracks beneath you.</p>
+        </header>
+        <div id="labels"></div>
+        <div id="select-bottom">
+          <button id="start-btn">Start</button>
+          <p class="hint">← → to choose · Enter to start · or tap an animal</p>
+        </div>
+      </div>
+
+      <div id="hud" class="hidden">
+        <div id="progress"><div id="progress-fill"></div></div>
+        <p id="controls-hint"></p>
+      </div>
+
+      <div id="overlay" class="hidden">
+        <div class="card">
+          <h2 id="overlay-title"></h2>
+          <p id="overlay-sub"></p>
+          <div class="buttons">
+            <button id="retry-btn">Try again</button>
+            <button id="change-btn" class="secondary">Change animal</button>
+          </div>
+          <p class="hint">Enter: retry · C: change animal</p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

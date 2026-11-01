@@ -1,0 +1,21 @@
+{
+  "name": "frozen-lake",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Hop an animal across a cracking frozen lake. Built with three.js.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.187.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5"
+  }
+}
